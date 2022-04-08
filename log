@@ -24,3 +24,9 @@ Fri Apr  8 15:26:02 UTC 2022:
  tests:  1|5
 total_score: 10/70
 ea68bc1
+Fri Apr  8 15:59:01 UTC 2022: 
+ hashmap.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+ tests:  5|4
+total_score: 30/70
+92db5f1
