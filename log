@@ -2,3 +2,14 @@ Fri Apr  8 02:07:41 UTC 2022:
  tests:  0|6
 total_score: 0/70
 f5cd033
+Fri Apr  8 15:23:16 UTC 2022: 
+ hashmap.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘createMap’:
+hashmap.c:63:12: error: ‘i’ is used uninitialized in this function [-Werror=uninitialized]
+  for ((*i) = 0 ; (*i) < capacity ; (*i)++)
+       ~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+e8b7bcd
