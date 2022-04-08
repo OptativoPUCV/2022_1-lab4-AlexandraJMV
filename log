@@ -30,3 +30,9 @@ Fri Apr  8 15:59:01 UTC 2022:
  tests:  5|4
 total_score: 30/70
 92db5f1
+Fri Apr  8 15:59:41 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  5|4
+total_score: 30/70
+72feeeb
