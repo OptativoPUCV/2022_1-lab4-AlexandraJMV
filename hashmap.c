@@ -148,7 +148,8 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
 	long *pos = &(map->current);
 
-	while (map->buckets[*pos] == NULL)
+	(*pos)++;
+	while (map->buckets[*pos] == NULL || map->buckets[*pos]->key == NULL)
 	{
 		(*pos) = ((*pos) + 1)%(map->capacity);
 		if (*pos == 0) return NULL;
