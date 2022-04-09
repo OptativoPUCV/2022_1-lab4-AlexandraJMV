@@ -235,3 +235,13 @@ Sat Apr  9 05:50:52 UTC 2022:
  tests:  17|0
 total_score: 70/70
 3a665ac
+Sat Apr  9 05:51:24 UTC 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:168:70: error: expected statement before ‘)’ token
+  while (map->buckets[pos] == NULL ||  map->buckets[pos]->key == NULL))
+                                                                      ^
+Compilation failed
+a5ec461

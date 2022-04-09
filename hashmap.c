@@ -165,15 +165,13 @@ Pair * nextMap(HashMap * map) {
 	Pair * aux = firstMap(map);
 
 	pos = (pos + 1)%(map->capacity);
-	while (map->buckets[pos] == NULL)
+	while (map->buckets[pos] == NULL ||  map->buckets[pos]->key == NULL))
 	{
 		pos = (pos + 1)%(map->capacity);
 	}
 	
 	map->current = pos;
 	
-	if ( map->buckets[pos]->key == NULL)
-		return NULL;
 	if (aux == map->buckets[pos])
 		return NULL;
 	
