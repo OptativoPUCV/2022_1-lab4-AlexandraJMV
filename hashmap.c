@@ -173,5 +173,6 @@ Pair * nextMap(HashMap * map) {
 		if (cont == map->capacity) return NULL;
 	}
 
+	map->current = pos;
     return map->buckets[pos];
 }
