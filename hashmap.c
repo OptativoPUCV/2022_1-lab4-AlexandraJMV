@@ -174,7 +174,8 @@ Pair * nextMap(HashMap * map) {
 	
 	if ( map->buckets[pos]->key == NULL)
 		return NULL;
-	if (aux == map->buckets[pos])
+	else if (aux == map->buckets[pos])
 		return NULL;
-    return map->buckets[pos];
+	
+    else return map->buckets[pos];
 }
