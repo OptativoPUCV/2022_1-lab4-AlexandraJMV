@@ -169,6 +169,7 @@ Pair * nextMap(HashMap * map) {
 	{
 		(*pos) = ((*pos) + 1)%(map->capacity);
 		cont ++;
+		if (*pos == 0) return NULL;
 		if (cont == map->capacity) return NULL;
 	}
 
