@@ -133,8 +133,16 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
+	map->current = 0;
+	long *pos = &(map->current);
 
-    return NULL;
+	while (map->buckets[*pos] == NULL || map->buckets[*pos]->key == NULL)
+	{
+		(*pos) = ((*pos) + 1)%(map->capacity);
+		if (*pos == 0) return NULL;
+	}
+
+    return map->buckets[*pos];
 }
 
 Pair * nextMap(HashMap * map) {
