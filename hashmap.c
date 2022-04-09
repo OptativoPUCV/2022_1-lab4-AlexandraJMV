@@ -161,7 +161,7 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-	long pos = map->current;
+	long pos = map->current + 1;
 	long cont = 0;
 
 	while (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
