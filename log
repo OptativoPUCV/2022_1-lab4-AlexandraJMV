@@ -124,3 +124,13 @@ Sat Apr  9 05:29:43 UTC 2022:
  tests:  17|0
 total_score: 70/70
 146ca27
+Sat Apr  9 05:35:20 UTC 2022: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:167:3: error: invalid type argument of unary ‘*’ (have ‘long int’)
+  (*pos)++;
+   ^~~~
+Compilation failed
+4f663b4
