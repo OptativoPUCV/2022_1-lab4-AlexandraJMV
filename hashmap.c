@@ -172,9 +172,9 @@ Pair * nextMap(HashMap * map) {
 	
 	map->current = pos;
 	
-	if ( map->buckets[pos]->key == NULL)
-		return NULL;
-	else if (aux == map->buckets[pos])
+	//if ( map->buckets[pos]->key == NULL)
+		//return NULL;
+	if (aux == map->buckets[pos])
 		return NULL;
 	
     else return map->buckets[pos];
