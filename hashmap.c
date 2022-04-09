@@ -169,8 +169,6 @@ Pair * nextMap(HashMap * map) {
 	while (map->buckets[pos] == NULL)
 	{
 		pos = (pos + 1)%(map->capacity);
-		cont ++;
-		if (cont == map->capacity) return NULL;
 	}
 
 	if ( map->buckets[pos]->key == NULL)

@@ -188,3 +188,14 @@ Sat Apr  9 05:43:10 UTC 2022:
  tests:  16|1
 total_score: 60/70
 56fa55e
+Sat Apr  9 05:44:39 UTC 2022: 
+ hashmap.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:166:7: error: unused variable ‘cont’ [-Werror=unused-variable]
+  long cont = 0;
+       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b261c22
